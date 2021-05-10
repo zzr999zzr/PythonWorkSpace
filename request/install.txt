@@ -1,0 +1,25 @@
+#安装python3.7，必须此版本
+#windows 安装虚拟环境：
+pip install virtualenv
+pip install virtualenvwrapper-win
+mkvirtualenv test_1
+#===================================
+#安装依赖包
+workon test_1
+pip install pymssql-2.1.4-cp37-cp37m-win_amd64.whl #用于mssql操作
+pip install requests #核心，用于请求
+pip install flask  #用于生产网站，当前选装
+pip install openpyxl #用于处理xlsx文件，当前选装
+pip install xlrd  #用于xls读文件，当前选装
+pip install xlutils  #用于xls修改文件，当前选装
+pip install python-dateutil #用于时间格式转换，当前选装
+pip install paramiko #用于ssh和sftp操作，当前选装
+pip install selenium  #用于页面ui测试，当前选装
+pip install  pymongo #用于mongodb操作，当前选装
+pip install PyMySQL #用于mysql操作
+pip install redis #用于redis操作，当前选装
+pip install sshtunnel #用于连接云端
+
+
+
+
